@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cardapio>
+
+    <prato id="01">
+        <nome>Sorvete à milanesa</nome>
+        <descricao>Muito gostoso com calda</descricao>
+        <ingredientes>
+            <ingrediente>Sorvete</ingrediente>
+            <ingrediente>Manga</ingrediente>
+            <ingrediente>Leite</ingrediente>
+        </ingredientes>
+        <preco>12,00</preco>
+        <calorias>1250kcal</calorias>
+        <tempodepreparo>10 minutos</tempodepreparo>
+    </prato>
+
+    <prato id="02">
+        <nome>Pastel de Vento</nome>
+        <descricao>Crocante por fora e recheio suculento</descricao>
+        <ingredientes>
+            <ingrediente>Massa de pastel</ingrediente>
+            <ingrediente>Carne moída</ingrediente>
+            <ingrediente>Queijo coalho</ingrediente>
+        </ingredientes>
+        <preco>8,50</preco>
+        <calorias>850kcal</calorias>
+        <tempodepreparo>15 minutos</tempodepreparo>
+    </prato>
+    
+    <prato id="03">
+        <nome>Guaravita</nome>
+        <descricao>Refrigerante sabor guaraná tradicional</descricao>
+        <ingredientes>
+            <ingrediente>Água gaseificada</ingrediente>
+            <ingrediente>Açúcar</ingrediente>
+            <ingrediente>Extrato de guaraná</ingrediente>
+        </ingredientes>
+        <preco>5,00</preco>
+        <calorias>200kcal</calorias>
+        <tempodepreparo>0 minutos</tempodepreparo>
+    </prato>
+    
+    <prato id="04">
+        <nome>Açaí Cremoso</nome>
+        <descricao>Açaí batido na hora com acompanhamentos</descricao>
+        <ingredientes>
+            <ingrediente>Polpa de açaí</ingrediente>
+            <ingrediente>Banana</ingrediente>
+            <ingrediente>Granola</ingrediente>
+        </ingredientes>
+        <preco>14,90</preco>
+        <calorias>600kcal</calorias>
+        <tempodepreparo>7 minutos</tempodepreparo>
+    </prato>
+    
+    <prato id="05">
+        <nome>X-Tudo</nome>
+        <descricao>O clássico com tudo que tem direito</descricao>
+        <ingredientes>
+            <ingrediente>Pão de hambúrguer</ingrediente>
+            <ingrediente>Hambúrguer bovino</ingrediente>
+            <ingrediente>Queijo</ingrediente>
+            <ingrediente>Presunto</ingrediente>
+            <ingrediente>Bacon</ingrediente>
+            <ingrediente>Ovo</ingrediente>
+        </ingredientes>
+        <preco>18,50</preco>
+        <calorias>1200kcal</calorias>
+        <tempodepreparo>20 minutos</tempodepreparo>
+    </prato>
+
+</cardapio>
