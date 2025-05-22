@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+
+<quiz versao="1">
+    <disciplina>Português</disciplina>
+    <professor>
+        <nome>Bruno de Paula</nome>
+        <matrícula>123456789</matrícula>
+    </professor>
+    <turma>InfoWeb4M</turma>
+    <data>22/05</data>
+    <questões>
+        <questão>
+            <enunciado>Onde há o uso correto de crase?</enunciado>
+            <pontuação>5</pontuação>
+            <alternativas>
+                <alternativa correta="sim">Vou à escola.</alternativa>
+                <alternativa correta="nao">Fica a direita.</alternativa>
+                <alternativa correta="nao">Fica a esquerda.</alternativa>
+                <alternativa correta="nao">Vou a noite.</alternativa>
+                <alternativa correta="nao">Amanhã à noite estará fria.</alternativa>
+            </alternativas>
+        </questão>
+
+        <!-- Questão 1 -->
+        <questão>
+            <enunciado>Qual destas palavras é um exemplo de oxítona?</enunciado>
+            <pontuação>2</pontuação>
+            <alternativas>
+                <alternativa correta="sim">Café</alternativa>
+                <alternativa correta="nao">Mesa</alternativa>
+                <alternativa correta="nao">Árvore</alternativa>
+                <alternativa correta="nao">Lápis</alternativa>
+            </alternativas>
+        </questão>
+
+        <!-- Questão 2 -->
+        <questão>
+            <enunciado>Assinale a alternativa com uso correto da vírgula:</enunciado>
+            <pontuação>3</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Eu gosto de pizza mas não de hambúrguer.</alternativa>
+                <alternativa correta="sim">Ana, que é médica, viajou ontem.</alternativa>
+                <alternativa correta="nao">O cachorro latiu e o gato miou.</alternativa>
+                <alternativa correta="nao">Estude pois a prova será difícil.</alternativa>
+            </alternativas>
+        </questão>
+
+        <!-- Questão 3 -->
+        <questão>
+            <enunciado>Qual frase está na voz passiva?</enunciado>
+            <pontuação>4</pontuação>
+            <alternativas>
+                <alternativa correta="nao">O aluno respondeu a questão.</alternativa>
+                <alternativa correta="sim">A questão foi respondida pelo aluno.</alternativa>
+                <alternativa correta="nao">Ele escreveu um livro.</alternativa>
+                <alternativa correta="nao">Ninguém entendeu o exercício.</alternativa>
+            </alternativas>
+        </questão>
+
+        <!-- Questão 4 -->
+        <questão>
+            <enunciado>Qual destes é um conectivo de conclusão?</enunciado>
+            <pontuação>1</pontuação>
+            <alternativas>
+                <alternativa correta="nao">Porque</alternativa>
+                <alternativa correta="nao">No entanto</alternativa>
+                <alternativa correta="sim">Portanto</alternativa>
+                <alternativa correta="nao">Além disso</alternativa>
+            </alternativas>
+        </questão>
+    </questões>
+</quiz>
