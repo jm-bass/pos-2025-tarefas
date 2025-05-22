@@ -10,7 +10,7 @@
             <ingrediente>Manga</ingrediente>
             <ingrediente>Leite</ingrediente>
         </ingredientes>
-        <preco moeda="BRL">12,00</preco>
+        <preco moeda="BRL">&reais;12,00</preco>
         <calorias>1250kcal</calorias>
         <tempoPreparo>10 minutos</tempoPreparo>
     </prato>
@@ -23,7 +23,7 @@
             <ingrediente>Carne moída</ingrediente>
             <ingrediente>Queijo coalho</ingrediente>
         </ingredientes>
-        <preco moeda="BRL">8,50</preco>
+        <preco moeda="BRL">&reais;8,50</preco>
         <calorias>850kcal</calorias>
         <tempoPreparo>15 minutos</tempoPreparo>
     </prato>
@@ -36,7 +36,7 @@
             <ingrediente>Açúcar</ingrediente>
             <ingrediente>Extrato de guaraná</ingrediente>
         </ingredientes>
-        <preco moeda="BRL">5,00</preco>
+        <preco moeda="BRL">&reais;5,00</preco>
         <calorias>200kcal</calorias>
         <tempoPreparo>0 minutos</tempoPreparo>
     </prato>
@@ -49,7 +49,7 @@
             <ingrediente>Banana</ingrediente>
             <ingrediente>Granola</ingrediente>
         </ingredientes>
-        <preco moeda="BRL">14,90</preco>
+        <preco moeda="BRL">&reais;14,90</preco>
         <calorias>600kcal</calorias>
         <tempoPreparo>7 minutos</tempoPreparo>
     </prato>
@@ -65,7 +65,7 @@
             <ingrediente>Bacon</ingrediente>
             <ingrediente>Ovo</ingrediente>
         </ingredientes>
-        <preco moeda="BRL">18,50</preco>
+        <preco moeda="BRL">&reais;18,50</preco>
         <calorias>1200kcal</calorias>
         <tempoPreparo>20 minutos</tempoPreparo>
     </prato>
