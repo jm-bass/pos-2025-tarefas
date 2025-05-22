@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
 <cardapio>
 
-    <prato id="01">
+    <prato id="P01">
         <nome>Sorvete à milanesa</nome>
         <descricao>Muito gostoso com calda</descricao>
         <ingredientes>
@@ -9,12 +10,12 @@
             <ingrediente>Manga</ingrediente>
             <ingrediente>Leite</ingrediente>
         </ingredientes>
-        <preco>12,00</preco>
+        <preco moeda="BRL">12,00</preco>
         <calorias>1250kcal</calorias>
-        <tempodepreparo>10 minutos</tempodepreparo>
+        <tempoPreparo>10 minutos</tempoPreparo>
     </prato>
 
-    <prato id="02">
+    <prato id="P02">
         <nome>Pastel de Vento</nome>
         <descricao>Crocante por fora e recheio suculento</descricao>
         <ingredientes>
@@ -22,12 +23,12 @@
             <ingrediente>Carne moída</ingrediente>
             <ingrediente>Queijo coalho</ingrediente>
         </ingredientes>
-        <preco>8,50</preco>
+        <preco moeda="BRL">8,50</preco>
         <calorias>850kcal</calorias>
-        <tempodepreparo>15 minutos</tempodepreparo>
+        <tempoPreparo>15 minutos</tempoPreparo>
     </prato>
     
-    <prato id="03">
+    <prato id="P03">
         <nome>Guaravita</nome>
         <descricao>Refrigerante sabor guaraná tradicional</descricao>
         <ingredientes>
@@ -35,12 +36,12 @@
             <ingrediente>Açúcar</ingrediente>
             <ingrediente>Extrato de guaraná</ingrediente>
         </ingredientes>
-        <preco>5,00</preco>
+        <preco moeda="BRL">5,00</preco>
         <calorias>200kcal</calorias>
-        <tempodepreparo>0 minutos</tempodepreparo>
+        <tempoPreparo>0 minutos</tempoPreparo>
     </prato>
     
-    <prato id="04">
+    <prato id="P04">
         <nome>Açaí Cremoso</nome>
         <descricao>Açaí batido na hora com acompanhamentos</descricao>
         <ingredientes>
@@ -48,12 +49,12 @@
             <ingrediente>Banana</ingrediente>
             <ingrediente>Granola</ingrediente>
         </ingredientes>
-        <preco>14,90</preco>
+        <preco moeda="BRL">14,90</preco>
         <calorias>600kcal</calorias>
-        <tempodepreparo>7 minutos</tempodepreparo>
+        <tempoPreparo>7 minutos</tempoPreparo>
     </prato>
     
-    <prato id="05">
+    <prato id="P05">
         <nome>X-Tudo</nome>
         <descricao>O clássico com tudo que tem direito</descricao>
         <ingredientes>
@@ -64,9 +65,9 @@
             <ingrediente>Bacon</ingrediente>
             <ingrediente>Ovo</ingrediente>
         </ingredientes>
-        <preco>18,50</preco>
+        <preco moeda="BRL">18,50</preco>
         <calorias>1200kcal</calorias>
-        <tempodepreparo>20 minutos</tempodepreparo>
+        <tempoPreparo>20 minutos</tempoPreparo>
     </prato>
 
 </cardapio>
