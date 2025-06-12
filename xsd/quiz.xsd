@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    xmlns:quiz="http://quiz.org"
+    targetNamespace="http://quiz.org"
+    elementFormDefault="qualified">
+
+    <element name="alternativa">
+        <complexType mixed="true">
+            <attribute name="correta" use="required">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="sim"/>
+                        <enumeration value="nao"/>
+                    </restriction>
+                </simpleType>
+            </attribute>
+        </complexType>
+    </element>
+
+    <element name="questão">
+        <complexType>
+            <sequence>
+                <element name="enunciado" type="string"></element>
+                <element name="pontuação" type="string"></element>
+                <element name="alternativas">
+                    <complexType>
+                        <sequence>
+                            <element ref="quiz:alternativa" maxOccurs="unbounded"></element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="quiz">
+        <complexType>
+            <sequence>
+                <element name="disciplina" type="string"></element>
+                <element name="professor">
+                    <complexType>
+                        <sequence>
+                            <element name="nome" type="string"></element>
+                            <element name="matrícula " type="string"></element>
+                        </sequence>
+                    </complexType>
+                </element>
+                <element name="turma" type="string"></element>
+                <element name="data" type="string"></element>
+                <element name="questões">
+                    <complexType>
+                        <sequence>
+                            <element ref="quiz:questão" maxOccurs="unbounded"></element>
+                        </sequence>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+
+</schema>
