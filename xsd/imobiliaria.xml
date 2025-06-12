@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE imobiliaria  [
-<!ELEMENT imobiliaria (imovel+)>
-<!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
-<!ELEMENT descricao (#PCDATA)>
-<!ELEMENT valor (#PCDATA)>
-<!ELEMENT proprietario (nome, (email|telefone)+)>
-<!ELEMENT nome (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT telefone (#PCDATA)>
-<!ELEMENT endereco (rua, bairro, cidade, numero?)>
-<!ELEMENT rua (#PCDATA)>
-<!ELEMENT bairro (#PCDATA)>
-<!ELEMENT cidade (#PCDATA)>
-<!ELEMENT numero (#PCDATA)>
-<!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
-<!ELEMENT tamanho (#PCDATA)>
-<!ELEMENT numQuartos (#PCDATA)>
-<!ELEMENT numBanheiros (#PCDATA)>
-]>
+<imobiliária xmlns="http://imobiliaria.org"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://imobiliaria.org imobiliaria.xsd">
 
-<imobiliaria>
     <imovel>
         <descricao>Apartamento moderno com vista para o mar</descricao>
         <proprietario>
@@ -32,10 +15,10 @@
             <rua>Avenida Beira Mar</rua>
             <bairro>Copacabana</bairro>
             <cidade>Rio de Janeiro</cidade>
-            <numero>1500</numero>
+            <número>150</número>
         </endereco>
         <caracteristicas>
-            <tamanho>85m²</tamanho>
+            <tamanho>85</tamanho>
             <numQuartos>2</numQuartos>
             <numBanheiros>2</numBanheiros>
         </caracteristicas>
@@ -54,7 +37,7 @@
             <cidade>Vinhedo</cidade>
         </endereco>
         <caracteristicas>
-            <tamanho>500m²</tamanho>
+            <tamanho>500</tamanho>
             <numQuartos>4</numQuartos>
             <numBanheiros>3</numBanheiros>
         </caracteristicas>
@@ -65,18 +48,18 @@
         <descricao>Casa de Cirilo</descricao>
         <proprietario>
             <nome>Diego Cirilo</nome>
+            <email>cirilo@xyz.com.br</email>
             <telefone>(19) 98895-7456</telefone>
             <telefone>(19) 99876-5432</telefone>
-            <email>cirilo@xyz.com.br</email>
         </proprietario>
         <endereco>
             <rua>Rua do IFRN</rua>
             <bairro>O mais chique</bairro>
             <cidade>MOSSORÓ</cidade>
-            <numero>123</numero>
+            <número>123</número>
         </endereco>
         <caracteristicas>
-            <tamanho>120m²</tamanho>
+            <tamanho>120</tamanho>
             <numQuartos>10</numQuartos> 
             <numBanheiros>20</numBanheiros>
         </caracteristicas>
@@ -96,7 +79,7 @@
             <cidade>São Paulo</cidade>
         </endereco>
         <caracteristicas>
-            <tamanho>120m²</tamanho>
+            <tamanho>120</tamanho>
             <numQuartos>1</numQuartos> 
             <numBanheiros>2</numBanheiros>
         </caracteristicas>
@@ -115,10 +98,11 @@
             <cidade>Sítio Novo</cidade>
         </endereco>
         <caracteristicas>
-            <tamanho>120m²</tamanho>
+            <tamanho>120</tamanho>
             <numQuartos>1</numQuartos> 
             <numBanheiros>2</numBanheiros>
         </caracteristicas>
         <valor>50.000</valor>
     </imovel>
-</imobiliaria>
+
+</imobiliária>
