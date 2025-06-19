@@ -1,0 +1,129 @@
+{
+  "imobiliária": [
+    {
+      "imovel": [
+        {
+          "descricao": "Apartamento moderno com vista para o mar",
+          "proprietario": {
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@email.com",
+            "telefone": [
+              "(21) 98765-4321",
+              "(21) 2222-3333"
+            ]
+          },
+          "endereco": {
+            "rua": "Avenida Beira Mar",
+            "bairro": "Copacabana",
+            "cidade": "Rio de Janeiro",
+            "número": 150
+          },
+          "caracteristicas": {
+            "tamanho": 85,
+            "numQuartos": 2,
+            "numBanheiros": 2
+          },
+          "valor": 1200000
+        }
+      ]
+    },
+    {
+      "imovel": [
+        {
+          "descricao": "Chácara espaçosa com piscina e área de lazer",
+          "proprietario": {
+            "nome": "Carlos Mendonça",
+            "telefone": [
+              "(19) 99876-5432"
+            ]
+          },
+          "endereco": {
+            "rua": "Estrada do Vinhedo",
+            "bairro": "Zona Rural",
+            "cidade": "Vinhedo"
+          },
+          "caracteristicas": {
+            "tamanho": 500,
+            "numQuartos": 4,
+            "numBanheiros": 3
+          },
+          "valor": 950000
+        }
+      ]
+    },
+    {
+      "imovel": [
+        {
+          "descricao": "Casa de Cirilo",
+          "proprietario": {
+            "nome": "Diego Cirilo",
+            "email": "cirilo@xyz.com.br",
+            "telefone": [
+              "(19) 98895-7456",
+              "(19) 99876-5432"
+            ]
+          },
+          "endereco": {
+            "rua": "Rua do IFRN",
+            "bairro": "O mais chique",
+            "cidade": "MOSSORÓ",
+            "número": 123
+          },
+          "caracteristicas": {
+            "tamanho": 120,
+            "numQuartos": 10,
+            "numBanheiros": 20
+          },
+          "valor": 20500000
+        }
+      ]
+    },
+    {
+      "imovel": [
+        {
+          "descricao": "Casa de Cirilo 2",
+          "proprietario": {
+            "nome": "Empresa XYZ Ltda",
+            "email": [
+              "imoveis@xyz.com.br",
+              "contato@xyz.com.br"
+            ]
+          },
+          "endereco": {
+            "rua": "Rua das Empresas",
+            "bairro": "Centro Empresarial",
+            "cidade": "São Paulo"
+          },
+          "caracteristicas": {
+            "tamanho": 120,
+            "numQuartos": 1,
+            "numBanheiros": 2
+          },
+          "valor": 2500000
+        }
+      ]
+    },
+    {
+      "imovel": [
+        {
+          "descricao": "Casa da Prefeita",
+          "proprietario": {
+            "nome": "Andrezza Brasil",
+            "email": "melhorprefeita@xyz.com.br"
+          },
+          "endereco": {
+            "rua": "Rua da prefeitura",
+            "bairro": "Centro Empresarial",
+            "cidade": "Sítio Novo"
+          },
+          "caracteristicas": {
+            "tamanho": 120,
+            "numQuartos": 1,
+            "numBanheiros": 2
+          },
+          "valor": 50000
+        }
+      ]
+    }
+  ]
+}

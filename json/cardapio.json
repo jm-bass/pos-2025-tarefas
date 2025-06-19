@@ -1,0 +1,97 @@
+{
+  "cardapio": [
+    {
+      "prato": [
+        {
+          "nome": "Sorvete à milanesa",
+          "descricao": "Muito gostoso com calda",
+          "ingredientes": {
+            "ingrediente": [
+              "Sorvete",
+              "Manga",
+              "Leite"
+            ]
+          },
+          "preco": 12.00,
+          "calorias": 1250,
+          "tempoPreparo": "10 minutos"
+        }
+      ]
+    },
+    {
+      "prato": [
+        {
+          "nome": "Pastel de Vento",
+          "descricao": "Crocante por fora e recheio suculento",
+          "ingredientes": {
+            "ingrediente": [
+              "Massa de pastel",
+              "Carne moída",
+              "Queijo coalho"
+            ]
+          },
+          "preco": 8.50,
+          "calorias": 850,
+          "tempoPreparo": "15 minutos"
+        }
+      ]
+    },
+    {
+      "prato": [
+        {
+          "nome": "Guaravita",
+          "descricao": "Refrigerante sabor guaraná tradicional",
+          "ingredientes": {
+            "ingrediente": [
+              "Água gaseificada",
+              "Açúcar",
+              "Extrato de guaraná"
+            ]
+          },
+          "preco": 5.00,
+          "calorias": 200,
+          "tempoPreparo": "0 minutos"
+        }
+      ]
+    },
+    {
+      "prato": [
+        {
+          "nome": "Açaí Cremoso",
+          "descricao": "Açaí batido na hora com acompanhamentos",
+          "ingredientes": {
+            "ingrediente": [
+              "Polpa de açaí",
+              "Banana",
+              "Granola"
+            ]
+          },
+          "preco": 14.90,
+          "calorias": 600,
+          "tempoPreparo": "7 minutos"
+        }
+      ]
+    },
+    {
+      "prato": [
+        {
+          "nome": "X-Tudo",
+          "descricao": "O clássico com tudo que tem direito",
+          "ingredientes": {
+            "ingrediente": [
+              "Pão de hambúrguer",
+              "Hambúrguer bovino",
+              "Queijo",
+              "Presunto",
+              "Bacon",
+              "Ovo"
+            ]
+          },
+          "preco": 18.50,
+          "calorias": 1200,
+          "tempoPreparo": "20 minutos"
+        }
+      ]
+    }
+  ]
+}

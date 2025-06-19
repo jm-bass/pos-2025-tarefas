@@ -1,0 +1,95 @@
+{
+  "quiz": {
+    
+    "disciplina": "Português",
+    "professor": {
+      "nome": "Bruno de Paula",
+      "matricula": "123456789"
+    },
+    "turma": "InfoWeb4M",
+    "data": "22/05",
+    "questoes": [
+      {
+        "questao": [
+          {
+            "enunciado": "Onde há o uso correto de crase?",
+            "pontuacao": "5",
+            "alternativas": {
+              "alternativa": [
+                "Vou à escola.",
+                "Fica a direita.",
+                "Fica a esquerda.",
+                "Vou a noite.",
+                "Amanhã à noite estará fria."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "questao": [
+          {
+            "enunciado": "Qual destas palavras é um exemplo de oxítona?",
+            "pontuacao": "2",
+            "alternativas": {
+              "alternativa": [
+                "Café",
+                "Mesa",
+                "Árvore",
+                "Lápis"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "questao": [
+          {
+            "enunciado": "Assinale a alternativa com uso correto da vírgula:",
+            "pontuacao": "3",
+            "alternativas": {
+              "alternativa": [
+                "Eu gosto de pizza mas não de hambúrguer.",
+                "Ana, que é médica, viajou ontem.",
+                "O cachorro latiu e o gato miou.",
+                "Estude pois a prova será difícil."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "questao": [
+          {
+            "enunciado": "Qual frase está na voz passiva?",
+            "pontuacao": "4",
+            "alternativas": {
+              "alternativa": [
+                "O aluno respondeu a questão.",
+                "A questão foi respondida pelo aluno.",
+                "Ele escreveu um livro.",
+                "Ninguém entendeu o exercício."
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "questao": [
+          {
+            "enunciado": "Qual destes é um conectivo de conclusão?",
+            "pontuacao": "1",
+            "alternativas": {
+              "alternativa": [
+                "Porque",
+                "No entanto",
+                "Portanto",
+                "Além disso"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
