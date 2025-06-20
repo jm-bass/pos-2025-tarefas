@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cardapio xmlns="http://cardapio.org"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://cardapio.org cardapio.xsd">
+
+
+    <prato id="1">
+        <nome>Sorvete à milanesa</nome>
+        <descricao>Muito gostoso com calda</descricao>
+        <ingredientes>
+            <ingrediente>Sorvete</ingrediente>
+            <ingrediente>Manga</ingrediente>
+            <ingrediente>Leite</ingrediente>
+        </ingredientes>
+        <preco>12.00</preco>
+        <calorias>1250</calorias>
+        <tempoPreparo>10 minutos</tempoPreparo>
+    </prato>
+
+    <prato id="2">
+        <nome>Pastel de Vento</nome>
+        <descricao>Crocante por fora e recheio suculento</descricao>
+        <ingredientes>
+            <ingrediente>Massa de pastel</ingrediente>
+            <ingrediente>Carne moída</ingrediente>
+            <ingrediente>Queijo coalho</ingrediente>
+        </ingredientes>
+        <preco>8.50</preco>
+        <calorias>850</calorias>
+        <tempoPreparo>15 minutos</tempoPreparo>
+    </prato>
+
+    <prato id="3">
+        <nome>Guaravita</nome>
+        <descricao>Refrigerante sabor guaraná tradicional</descricao>
+        <ingredientes>
+            <ingrediente>Água gaseificada</ingrediente>
+            <ingrediente>Açúcar</ingrediente>
+            <ingrediente>Extrato de guaraná</ingrediente>
+        </ingredientes>
+        <preco>5.00</preco>
+        <calorias>200</calorias>
+        <tempoPreparo>0 minutos</tempoPreparo>
+    </prato>
+
+    <prato id="4">
+        <nome>Açaí Cremoso</nome>
+        <descricao>Açaí batido na hora com acompanhamentos</descricao>
+        <ingredientes>
+            <ingrediente>Polpa de açaí</ingrediente>
+            <ingrediente>Banana</ingrediente>
+            <ingrediente>Granola</ingrediente>
+        </ingredientes>
+        <preco>14.90</preco>
+        <calorias>600</calorias>
+        <tempoPreparo>7 minutos</tempoPreparo>
+    </prato>
+
+    <prato id="5">
+        <nome>X-Tudo</nome>
+        <descricao>O clássico com tudo que tem direito</descricao>
+        <ingredientes>
+            <ingrediente>Pão de hambúrguer</ingrediente>
+            <ingrediente>Hambúrguer bovino</ingrediente>
+            <ingrediente>Queijo</ingrediente>
+            <ingrediente>Presunto</ingrediente>
+            <ingrediente>Bacon</ingrediente>
+            <ingrediente>Ovo</ingrediente>
+        </ingredientes>
+        <preco>18.50</preco>
+        <calorias>1200</calorias>
+        <tempoPreparo>20 minutos</tempoPreparo>
+    </prato>
+
+</cardapio>
