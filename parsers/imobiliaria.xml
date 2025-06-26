@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<imobiliária>
+
+    <imovel>
+        <descricao>Apartamento moderno com vista para o mar</descricao>
+        <proprietario>
+            <nome>Maria Oliveira</nome>
+            <email>maria.oliveira@email.com</email>
+            <telefone>(21) 98765-4321</telefone>
+            <telefone>(21) 2222-3333</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Avenida Beira Mar</rua>
+            <bairro>Copacabana</bairro>
+            <cidade>Rio de Janeiro</cidade>
+            <número>150</número>
+        </endereco>
+        <caracteristicas>
+            <tamanho>85</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>1.200.000</valor>
+    </imovel>
+    
+    <imovel>
+        <descricao>Chácara espaçosa com piscina e área de lazer</descricao>
+        <proprietario>
+            <nome>Carlos Mendonça</nome>
+            <telefone>(19) 99876-5432</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Estrada do Vinhedo</rua>
+            <bairro>Zona Rural</bairro>
+            <cidade>Vinhedo</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>500</tamanho>
+            <numQuartos>4</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>950.000</valor>
+    </imovel>
+    
+    <imovel>
+        <descricao>Casa de Cirilo</descricao>
+        <proprietario>
+            <nome>Diego Cirilo</nome>
+            <email>cirilo@xyz.com.br</email>
+            <telefone>(19) 98895-7456</telefone>
+            <telefone>(19) 99876-5432</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua do IFRN</rua>
+            <bairro>O mais chique</bairro>
+            <cidade>MOSSORÓ</cidade>
+            <número>123</número>
+        </endereco>
+        <caracteristicas>
+            <tamanho>120</tamanho>
+            <numQuartos>10</numQuartos> 
+            <numBanheiros>20</numBanheiros>
+        </caracteristicas>
+        <valor>20.500.000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Casa de Cirilo 2</descricao>
+        <proprietario>
+            <nome>Empresa XYZ Ltda</nome>
+            <email>imoveis@xyz.com.br</email>
+            <email>contato@xyz.com.br</email>
+        </proprietario>
+        <endereco>
+            <rua>Rua das Empresas</rua>
+            <bairro>Centro Empresarial</bairro>
+            <cidade>São Paulo</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>120</tamanho>
+            <numQuartos>1</numQuartos> 
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>2.500.000</valor>
+    </imovel>
+
+    <imovel>
+        <descricao>Casa da Prefeita</descricao>
+        <proprietario>
+            <nome>Andrezza Brasil</nome>
+            <email>melhorprefeita@xyz.com.br</email>
+        </proprietario>
+        <endereco>
+            <rua>Rua da prefeitura</rua>
+            <bairro>Centro Empresarial</bairro>
+            <cidade>Sítio Novo</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>120</tamanho>
+            <numQuartos>1</numQuartos> 
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>50.000</valor>
+    </imovel>
+
+</imobiliária>
