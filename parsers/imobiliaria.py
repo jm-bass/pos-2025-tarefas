@@ -1,6 +1,7 @@
+import json
 from xml.dom.minidom import parse
 
-dom = parse("imobiliaria.xml")
+dom = parse("parsers/imobiliaria.xml")
 
 # Elemento raiz do XML (imobiliaria)
 imobiliaria = dom.documentElement
@@ -9,6 +10,8 @@ imobiliaria = dom.documentElement
 imoveis = imobiliaria.getElementsByTagName('imovel')
 
 linha = "-"*50
+
+dados_json = []
 
 for imovel in imoveis:
     elemento_descricao = imovel.getElementsByTagName('descricao')[0]
@@ -23,15 +26,25 @@ for imovel in imoveis:
     quantTelefone = 0
 
     elemento_endereco = imovel.getElementsByTagName('endereco')[0]
-    elemento_rua = elemento_proprietario.getElementsByTagName('rua')[0]
+    elemento_rua = elemento_endereco.getElementsByTagName('rua')[0]
     rua = elemento_rua.firstChild.nodeValue
-    elemento_bairro = elemento_proprietario.getElementsByTagName('bairro')[0]
+    elemento_bairro = elemento_endereco.getElementsByTagName('bairro')[0]
     bairro = elemento_bairro.firstChild.nodeValue
-    elemento_cidade = elemento_proprietario.getElementsByTagName('cidade')[0]
+    elemento_cidade = elemento_endereco.getElementsByTagName('cidade')[0]
     cidade = elemento_cidade.firstChild.nodeValue
-    elemento_numero = elemento_proprietario.getElementsByTagName('número')[0]
-    numero = elemento_numero.firstChild.nodeValue
-
+    if elemento_endereco.getElementsByTagName('numero'):
+        elemento_numero = elemento_endereco.getElementsByTagName('numero')
+    else:
+        elemento_numero = elemento_endereco.getElementsByTagName('número')
+    if elemento_numero:
+        elemento_numero = elemento_numero[0]
+    else:
+        elemento_numero = None
+    if elemento_numero and elemento_numero.firstChild:
+        numero = elemento_numero.firstChild.nodeValue
+    else:
+        numero = None
+     
     elemento_caracteristicas = imovel.getElementsByTagName('caracteristicas')[0]
     elemento_tamanho = elemento_caracteristicas.getElementsByTagName('tamanho')[0]
     tamanho = elemento_tamanho.firstChild.nodeValue
@@ -70,3 +83,31 @@ for imovel in imoveis:
 
     print("Valor:", valor)
     print(linha)
+
+    imovel_dict = {
+        "descricao": descricao,
+        "proprietario": {
+            "nome": nome,
+            "emails": [email.firstChild.nodeValue for email in elemento_email],
+            "telefones": [tel.firstChild.nodeValue for tel in elemento_telefone]
+        },
+        "endereco": {
+            "rua": rua,
+            "bairro": bairro,
+            "cidade": cidade,
+            "numero": numero
+        },
+        "caracteristicas": {
+            "tamanho": tamanho,
+            "numQuartos": numQuartos,
+            "numBanheiros": numBanheiros
+        },
+        "valor": valor
+    }
+
+
+    dados_json.append(imovel_dict)
+
+with open("parsers/imobiliaria.json", "w", encoding="utf-8") as f:
+    json.dump(dados_json, f, ensure_ascii=False, indent=4)
+    print("Dados salvos em imobiliaria.json")
