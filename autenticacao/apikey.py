@@ -1,67 +1,36 @@
 import requests
 from getpass import getpass
-from tabulate import tabulate
 
 api_url = "https://suap.ifrn.edu.br/api/"
 
-user = "20221181110009"
-password = getpass("Senha: ")
+user = input("user: ")
+password = getpass()
 
-data = {"username": user, "password": password}
+data = {"username":user,"password":password}
 
-response = requests.post(api_url + "v2/autenticacao/token/", json=data)
+response = requests.post(api_url+"v2/autenticacao/token/", json=data)
 token = response.json()['access']
+print(response.json())
 
 headers = {
     "Authorization": f'Bearer {token}'
 }
 
+print(headers)
 
-#ano = int(input("Digite o ano: "))
-#semestre = int(input("Digite o semestre (1 ou 2): "))
+response = requests.get(api_url+"/ensino/meu-boletim/2024/1/", headers=headers)
 
-
-#if ((ano == int) and (ano < 2026)) and (semestre == (1 or 2)):
-#ano = str(ano)
-#semestre = str(semestre)
-
-#response = requests.get(api_url + "/ensino/meu-boletim/{ano}/{semestre}/".format(ano=ano, semestre=semestre), headers=headers)
-
-response = requests.get(api_url + "/ensino/meu-boletim/2024/1/", headers=headers)
 disciplinas = response.json()
 
-print(disciplinas)
+#print(response.json())
 
-tabela_dados = []
 for disciplina in disciplinas['results']:
+    print(f" Disciplina: {disciplina['disciplina']}, Nota Etapa 1: {disciplina['nota_etapa_1']['nota']}, Nota Etapa 2: {disciplina['nota_etapa_2']['nota']}, Nota Etapa 3: {disciplina['nota_etapa_3']['nota']}, Nota Etapa 4: {disciplina['nota_etapa_4']['nota']}")
 
-    if disciplina['segundo_semestre'] == False:
-        linha = [
-            disciplina['disciplina'],
-            disciplina['nota_etapa_1']['nota'],
-            disciplina['nota_etapa_2']['nota'],
-            disciplina['nota_etapa_3']['nota'],
-            disciplina['nota_etapa_4']['nota']
-        ]
-    else:
-        linha = [
-            disciplina['disciplina'],
-            "",
-            "",
-            disciplina['nota_etapa_1']['nota'],
-            disciplina['nota_etapa_2']['nota']
-        ]
+print(response)
 
-    #add a linha na tebela
-    tabela_dados.append(linha)
-
-# Define cabeçalhos
-cabecalhos = ["Disciplina", "Etapa 1", "Etapa 2", "Etapa 3", "Etapa 4"]
-
-
-# Exibir a tabela formatada
-print("\nBOLETIM - NOTAS POR ETAPA")
-print(tabulate(tabela_dados, headers=cabecalhos, tablefmt="grid"))
-
-#else:
-    #print("Ano ou semestre inválido. Por favor, tente novamente.")
+#{'codigo_diario': '126447', 'disciplina': 'TIN.0597 - Análise e Projeto Orientados a Objetos(60H)',
+#'segundo_semestre': False, 'carga_horaria': 80, 'carga_horaria_cumprida': 85, 'numero_faltas': 14,
+#'percentual_carga_horaria_frequentada': 84.0, 'situacao': 'Aprovado', 'quantidade_avaliacoes': 4,
+#'nota_etapa_1': {'nota': 70, 'faltas': 0}, 'nota_etapa_2': {'nota': 89, 'faltas': 0}, 'nota_etapa_3': {'nota': 83, 'faltas': 14},
+#'nota_etapa_4': {'nota': 89, 'faltas': 0}, 'media_disciplina': 83, 'nota_avaliacao_final': {'nota': None, 'faltas': 0}, 'media_final_disciplina': '83'},
