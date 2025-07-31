@@ -4,7 +4,7 @@ from tabulate import tabulate
 
 api_url = "https://suap.ifrn.edu.br/api/"
 
-user = "Matrícula: "
+user = input("Matrícula: ") 
 password = getpass("Senha: ")
 
 data = {"username": user, "password": password}
@@ -28,9 +28,8 @@ headers = {
 #response = requests.get(api_url + "/ensino/meu-boletim/{ano}/{semestre}/".format(ano=ano, semestre=semestre), headers=headers)
 
 response = requests.get(api_url + "/ensino/meu-boletim/2024/1/", headers=headers)
-disciplinas = response.json()
 
-print(disciplinas)
+disciplinas = response.json()
 
 tabela_dados = []
 for disciplina in disciplinas['results']:
