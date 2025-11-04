@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cliente FIPE JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial;
+            padding: 1em 2em;
+        }
+
+        select,
+        button {
+            margin: 0.25em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Consulta Tabela FIPE (JS Vanilla)</h1>
+    <label for="fabricantes">Fabricantes:</label>
+    <select id="fabricantes">
+        <option value="neutro">Selecione um fabricante</option>
+    </select>
+
+    <br>
+
+    <label for="modelos">Modelos:</label>
+    <select id="modelos">
+        <option value="neutro">Selecione um modelo</option>
+    </select>
+
+    <br>
+
+    <div id="resultado"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
